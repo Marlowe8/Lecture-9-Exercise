@@ -1,5 +1,19 @@
 # Lecture-9-Exercise
 
+//Reverse 9 times table
+		#include <iostream> 
+		using namespace std;
+		int main() {
+			int num = 108;
+			while (num != 0) {
+				cout << num << endl;
+				num -= 9;
+			}
+
+			return 0;
+		}
+
+
 //Brute-Force Attack I
 #include <iostream>
 using namespace std;
@@ -65,3 +79,38 @@ int main() {
 
 	return 0;
 }
+	
+	
+//Input Improvement
+	#include <iostream> 
+using namespace std;
+int main() {
+	char input;
+	do {
+		cout << "Would you like to Quit (Y/N)?" <<
+			endl;
+		cin >> input;
+		if (input == 'n' || input == 'N') {
+			system("cls");
+			cout << "okay you don't want to quit" << endl;
+		}
+	} while ((input != 'Y') && (input != 'y'));
+	return 0;
+}
+	
+//Loopy
+	#include <iostream> 
+using namespace std;
+int main() {
+	int myInt;
+	int counter =0;
+
+	cout << "Enter number where the program will start to count: "; cin >> myInt;
+	while (counter< myInt) {
+		cout << counter + 1 << endl;
+		counter++;
+	}
+
+	return 0;
+}
+
