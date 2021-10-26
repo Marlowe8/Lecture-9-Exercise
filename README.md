@@ -12,6 +12,32 @@
 
 			return 0;
 		}
+	
+//The Pointless Box
+	#include <iostream> 
+using namespace std;
+int main() {
+	char input;
+	int counter = 0;
+	while (counter !=5) {
+	cout << "Only 5 attempts. Attempts Entered: " <<counter << endl;
+	cout << "Enter 1 or 2 to see the message: "; cin >> input;
+		if (input == '1') {
+			cout << "you have entered the number 1" << endl;
+			return 0;
+		} else if (input == '2') {
+			cout << "you have entered the number 2" << endl;
+			return 0;
+		}
+		else {
+		system("cls");
+			counter++;
+		}
+
+	}
+
+	return 0;
+}
 
 
 //Brute-Force Attack I
